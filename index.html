@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <title>Project 1 | Landing Page: Jackson Guitars replica</title>
+  <link
+    rel="icon"
+    href="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720366159/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/favicon_h76bre.png"
+    type="image/x-icon"
+  />
+  <meta
+    name="description"
+    content="Project 1 for RockTheCode: Jackson Guitars landing page replica"
+  />
+  <meta name="author" content="Juanma 'Goblin' Martínez" />
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.jacksonguitars.com/en-ES/start">
+  <meta name="keywords" content="practice, project, CSS, Flex, Grid, Jackson Guitars, Jackson, RockTheCode, replica, layout designer, information architect, goblin project">
+  <html prefix="og: https://ogp.me/ns#">
+  <meta property="og:title" content="Project 1 for RockTheCode: Jackson Guitars landing page replica" />
+  <meta property="og:description" content="Project 1 for RockTheCode: Jackson Guitars landing page replica">
+  <meta property="og:type" content="website" />
+  <!-- FALTA URL DE NETLIFY EN "content" -->
+  <!-- <meta property="og:url" content="#" /> -->
+  <meta property="og:image" content="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720366574/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/og_-_twitter_card_eaw5wq.gif" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Project 1 for RockTheCode: Jackson Guitars landing page replica">
+  <meta name="twitter:description" content="Project 1 for RockTheCode: Jackson Guitars landing page replica">
+  <meta name="twitter:site" content="@rtcproject1">
+  <meta name="twitter:creator" content="@juanmagoblinmartinez">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720366574/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/og_-_twitter_card_eaw5wq.gif">
+</head>
+<body>
+  <div id="sign-in-bar">
+    <a href="https://www.jacksonguitars.com/on/demandware.store/Sites-Jackson-EMEA-Site/en_ES/Login-Show" rel="noopener noreferrer" aria-label="Go to Register Page">
+      <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471385/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_user_circle_jserjm.webp" alt="User Circle Icon" loading="lazy">
+        <p>Sign In</p>
+      </img>
+    </a>
+  </div>
+  <header>
+    <div class="flex-container-in-line logo-search-input-bar">
+      <!-- EL TEXTO DE H1 QUEDARÁ OCULTO CON CSS, PERO LO INSERTO EN LA ESTRUCTURA POR SU RELEVANCIA SEMÁNTICA -->
+      <h1>JACKSON GUITARS</h1>
+      <!-- FALTA URL DE NETLIFY EN "href" -->
+      <a href="#sign-in-bar" aria-label="Go to Jackson Home Page" rel="noopener noreferrer">
+        <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720623108/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/jackson_guitars_logo_white_eskahx.png" alt="Jackson logo" title="Jackson Home" loading="lazy">
+      </a>
+      <div class="flex-container-in-line search-input-container">
+        <button id="lens-button">
+          <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720621339/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/lens_icon_jsrxur.png" alt="Lens icon" loading="lazy">
+        </button>
+        <input type="search" placeholder="Search">
+      </div>
+      <nav class="flex-container-in-line header-nav-icons first-burger-extended-menu">
+        <li id="responsive-user-icon">
+          <a href="https://www.jacksonguitars.com/on/demandware.store/Sites-Jackson-EMEA-Site/en_ES/Login-Show" aria-label="Go to Register Page" rel="noopener noreferrer">
+            <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1722161746/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_user_no_circle_m3xa4z.png" alt="User Icon" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jacksonguitars.com/en-ES/dealers" aria-label="Go to locate a Jackson authorize dealer" rel="noopener noreferrer">
+            <img id="location-icon" class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471394/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_location_ngws7c.webp" alt="Location icon" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jacksonguitars.com/en-ES/cart" aria-label="Go to shopping cart" rel="noopener noreferrer">
+            <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471580/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_cart_ci1qze.webp" alt="Shopping cart icon" loading="lazy">
+          </a>
+        </li>
+        <li id="burger-menu-icon">
+          <input type="checkbox" id="extended-burger-menu" class="extended-burger-menu">
+          <label for="extended-burger-menu" class="burger-menu-icon">
+            <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1717260336/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/Hamburger_icon.svg_ykipvr.png" alt="Burger Menu icon" loading="lazy">
+          </label>
+          <div id="extended-burger-menu-container" class="flex-container-column extended-burger-menu-container">
+            <!-- FALTA LA URL QUE FACILITE NETLIFY -->
+            <a href="#sign-in-bar" aria-label="Go to Jackson Home Page" rel="noopener noreferrer">
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720623108/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/jackson_guitars_logo_white_eskahx.png" alt="Jackson logo" title="Jackson Home" loading="lazy">
+            </a>
+            <label for="extended-burger-menu" class="closing-extended-burger-menu">
+              <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1717260270/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/2014529-200_thngda.png" alt="Closing Cross Icon" loading="lazy">
+            </label>
+            <nav class="first-extended-burger-menu">
+              <ul class="flex-container-column header-nav-bar">
+                <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to 2024 Models Shop" rel="noopener noreferrer"><p>2024 MODELS</p></a></li>
+                <li class="flex-container-in-line extended-burger-submenu">
+                  <p>GUITARS</p>
+                  <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                </li>
+                <div class="flex-container-column expanded-submenu" id="expanded-guitars-burger-submenu">
+                  <div class="flex-container-in-line expanded-submenu-subheader">
+                    <label for="extended-burger-menu" class="flex-container-in-line closing-submenu-toggle closing-submenu-arrow-icon">
+                      <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1722361886/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/Arrow_left_icon_e0tren.png" alt="Arrow Left Icon" loading="lazy"><p>ALL</p>
+                    </label>
+                    <label for="extended-burger-menu" class="flex-container-column closing-submenu-icon">
+                      <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1717260270/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/2014529-200_thngda.png" alt="Closing Cross Icon" loading="lazy">
+                    </label>
+                  </div>
+                  <p>GUITARS</p>
+                  <ul>
+
+                    <li><a href="https://www.jacksonguitars.com/en-ES/guitars/" aria-label="Go to Shop All Guitars" rel="noopener noreferrer"><h4>Shop All Guitars</h4></a></li>
+                    <li class="flex-container-in-line expanded-burger-submenu">
+                      <h4>Featured</h4>
+                      <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                      <div class="flex-container-column second-expanded-submenu" id="expanded-featured-burger-submenu">
+                        <ul class="flex-container-column">
+                          <p>FEATURED</p>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to New Arrivals" rel="noopener noreferrer"><p><span>New Arrivals</span></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/electrics-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/" aria-label="Go to Pro Plus Series" rel="noopener noreferrer"><p><span>NEW!</span> Pro Plus Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to X Series Models" rel="noopener noreferrer"><p><span>NEW!</span> X Series Models</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/concept-series/" aria-label="Go to Ltd Edition Concept Series" rel="noopener noreferrer"><p><span>NEW!</span> Ltd Edition Concept Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/diablo-iv-kelly-EMEA.html" aria-label="Go to Custom Shop Diablo IV Kelly" rel="noopener noreferrer"><p><span>Limited Edition!</span> Custom Shop Diablo IV Kelly</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/mj-series/mj-series-rhoads-rr24mg/2904001898.html" aria-label="Go to MJ Series Rhoads RR24MG" rel="noopener noreferrer"><p>MJ Series Rhoads RR24MG</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/left-handed-guitars/" aria-label="Go to Left Handed Guitars" rel="noopener noreferrer"><p>Left Handed Guitars</p></a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="flex-container-in-line expanded-burger-submenu">
+                      <h4>Shop By Series</h4>
+                      <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                      <div class="flex-container-column second-expanded-submenu" id="expanded-shopbyseries-burger-submenu">
+                        <ul class="flex-container-column">
+                          <p>SHOP BY SERIES</p>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/american-series/" aria-label="Go to American Series" rel="noopener noreferrer"><p>American Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/mj-series/" aria-label="Go to MJ Series" rel="noopener noreferrer"><p>MJ Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/concept-series/" aria-label="Go to Concept Series" rel="noopener noreferrer"><p>Concept Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/" aria-label="Go to Pro Plus Series" rel="noopener noreferrer"><p>Pro Plus Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-series/" aria-label="Go to Pro Series" rel="noopener noreferrer"><p>Pro Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to X Series" rel="noopener noreferrer"><p>X Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/js-series/" aria-label="Go to JS Series" rel="noopener noreferrer"><p>JS Series</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/artist-signature/" aria-label="Go to Artist Signature" rel="noopener noreferrer"><p>Artist Signature</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/guitars/" aria-label="Go to Shop All Guitars" rel="noopener noreferrer"><p class="underline">Shop All Guitars</p></a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="flex-container-in-line expanded-burger-submenu">
+                      <h4>Shop By Shape</h4>
+                      <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                      <div class="flex-container-column second-expanded-submenu" id="expanded-shopbyshape-burger-submenu">
+                        <ul class="flex-container-column">
+                          <p>SHOP BY SHAPE</p>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/dinky/" aria-label="Go to Dinky" rel="noopener noreferrer"><p>Dinky<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/virtuoso/" aria-label="Go to Virtuoso" rel="noopener noreferrer"><p>Virtuoso<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/soloist/" aria-label="Go to Soloist" rel="noopener noreferrer"><p>Soloist<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/rhoads/" aria-label="Go to Rhoads" rel="noopener noreferrer"><p>Rhoads</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/king-v/" aria-label="Go to King V" rel="noopener noreferrer"><p>King V<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/juggernaut/" aria-label="Go to Juggernaut" rel="noopener noreferrer"><p>Juggernaut</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/kelly/" aria-label="Go to Kelly" rel="noopener noreferrer"><p>Kelly<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/monarkh/" aria-label="Go to Monarkh" rel="noopener noreferrer"><p>Monarkh</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/san-dimas/" aria-label="Go to San Dimas" rel="noopener noreferrer"><p>San Dimas®</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/star/" aria-label="Go to Star" rel="noopener noreferrer"><p>Star</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/warrior/" aria-label="Go to Warrior" rel="noopener noreferrer"><p>Warrior<sup>TM</sup></p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/shadowcaster/" aria-label="Go to Shadowcaster" rel="noopener noreferrer"><p>Shadowcaster</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/mf-1/" aria-label="Go to MF-1" rel="noopener noreferrer"><p>MF-1</p></a></li>
+                          <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/demmelition/" aria-label="Go to Demmelition" rel="noopener noreferrer"><p>Demmelition</p></a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <li class="flex-container-in-line extended-burger-submenu">
+                  <p>BASSES</p>
+                  <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                </li>
+                <div class="flex-container-in-line expanded-submenu" id="expanded-basses-menu-burger-menu">
+                  <div class="flex-container-column">
+                    <h4>FEATURED</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/pro-spectra.html" aria-label="Go to Pro Series Spectra" rel="noopener noreferrer"><p><span>NEW!</span> Pro Series Spectra</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/artist-signature/pro-series-signature-adam-blackstone%2C-gladys-jackson-concert%E2%84%A2-bass%2C-maple-fingerboard%2C-black-stone/2917699893.html" aria-label="Go to Adam Blackstone Gladys Signature Bass" rel="noopener noreferrer"><p><span>NEW!</span> Adam Blackstone "Gladys" Signature Bass</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/basses-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to Custom Shop Diablo IV Kelly" rel="noopener noreferrer"><p><span>NEW ARRIVALS</span></p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column expanded-submenu">
+                    <h4>SHOP BY SERIES</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/pro-series/" aria-label="Go to Pro Series" rel="noopener noreferrer"><p>Pro Series</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/x-series/" aria-label="Go to X Series" rel="noopener noreferrer"><p>X Series</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/js-series/" aria-label="Go to JS Series" rel="noopener noreferrer"><p>JS Series</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/artist-signature/" aria-label="Go to Artist Signature" rel="noopener noreferrer"><p>Artist Signature</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/basses/" aria-label="Go to Shop All Basses" rel="noopener noreferrer"><p class="underline">Shop All Basses</p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column expanded-submenu">
+                    <h4>SHOP BY SHAPE</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/concert-bass/" aria-label="Go to Concert Bass" rel="noopener noreferrer"><p>Concert Bass</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/kelly-bird/" aria-label="Go to Kelly Bird" rel="noopener noreferrer"><p>Kelly Bird</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/spectra-bass/" aria-label="Go to Spectra Bass" rel="noopener noreferrer"><p>Spectra Bass<sup>TM</sup></p></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <li class="flex-container-in-line extended-burger-submenu">
+                  <p>ACCESSORIES</p>
+                  <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                </li>
+                <div class="flex-container-in-line expanded-submenu" id="expanded-accessories-menu-burger-menu">
+                  <div class="flex-container-column">
+                    <h4>FEATURED</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/accessories-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column">
+                    <h4>SHOP BY CATEGORY</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/cables/" aria-label="Go to Cables" rel="noopener noreferrer"><p>Cables</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/picks/" aria-label="Go to Picks" rel="noopener noreferrer"><p>Picks</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/straps/" aria-label="Go to Straps" rel="noopener noreferrer"><p>Straps</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/strings/" aria-label="Go to Strings" rel="noopener noreferrer"><p>Strings</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/care-%26-cleaning/" aria-label="Go to Care and Cleaning" rel="noopener noreferrer"><p>Care & Cleaning</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/" aria-label="Go to Shop All" rel="noopener noreferrer"><p class="underline">Shop All</p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column">
+                    <h4>SHOP CASES & GIG BAGS</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/cases/" aria-label="Go to Cases" rel="noopener noreferrer"><p>Cases</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/accessories/gig-bags/" aria-label="Go to Gig Bags" rel="noopener noreferrer"><p>Gig Bags</p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column">
+                    <h4>HIGHLIGHTS</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/case-finder.html" aria-label="Go to Cases" rel="noopener noreferrer"><p>Jackson Case Finder</p></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <li class="flex-container-in-line extended-burger-submenu">
+                  <p>LIFESTYLE</p>
+                  <img class="icon modified-to-right-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/t_Arrow right icon/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow right icon" loading="lazy">
+                </li>
+                <div class="flex-container-in-line expanded-submenu" id="expanded-lifestyle-menu-burger-menu">
+                  <div class="flex-container-column">
+                    <h4>FEATURED</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/new-apparel/" aria-label="Go to New Apparel" rel="noopener noreferrer"><p><span>NEW APPAREL</span></p></a></li>
+                    </ul>
+                  </div>
+                  <div class="flex-container-column">
+                    <h4>SHOP BY CATEGORY</h4>
+                    <ul class="flex-container-column">
+                      <li><a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/clothing/" aria-label="Go to Clothing" rel="noopener noreferrer"><p>Clothing</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/collectibles/" aria-label="Go to Collectibles" rel="noopener noreferrer"><p>Collectibles</p></a></li>
+                      <li><a href="https://www.jacksonguitars.com/en-ES/lifestyle/" aria-label="Go to Shop All" rel="noopener noreferrer"><p class="underline">Shop All</p></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://www.jacksonguitars.com/en-ES/artists.html" aria-label="Go to Artists" rel="noopener noreferrer"><p>ARTIST</p></a></li>
+                <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://blog.jacksonguitars.com/" aria-label="Go to News" rel="noopener noreferrer"><p>NEWS</p></a></li>
+              </ul>
+            </nav>
+            <nav class="second-extended-burger-menu">
+              <li>
+                <a class="flex-container-in-line" href="https://www.jacksonguitars.com/on/demandware.store/Sites-Jackson-EMEA-Site/en_ES/Login-Show" rel="noopener noreferrer" aria-label="Go to Register Page">
+                  <img class="icon header-nav-bar-modified-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1722161746/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_user_no_circle_m3xa4z.png" alt="User Circle Icon" loading="lazy">
+                    <p>Sign In</p>
+                  </img>
+                </a>
+              </li>
+              <li>
+                <a class="flex-container-in-line" href="https://www.jacksonguitars.com/en-ES/dealers" aria-label="Go to locate a Jackson authorize dealer" rel="noopener noreferrer">
+                  <img class="icon header-nav-bar-modified-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471394/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_location_ngws7c.webp" alt="Location icon" loading="lazy">
+                    <p>Find A Dealer</p>
+                  </img>
+                </a>
+              </li>
+              <li>
+                <a class="flex-container-in-line" href="https://www.jacksonguitars.com/en-ES/cart" aria-label="Go to shopping cart" rel="noopener noreferrer">
+                  <img class="icon header-nav-bar-modified-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471580/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/icon_cart_ci1qze.webp" alt="Shopping cart icon" loading="lazy">
+                    <p>Your Cart</p>
+                  </img>
+                </a>
+              </li>
+            </nav>
+          </div>
+        </li>
+      </nav>
+    </div>
+    <nav>
+      <ul class="flex-container-in-line header-nav-bar">
+        <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to 2024 Models Shop" rel="noopener noreferrer"><p>2024 MODELS</p></a></li>
+        <li id="expanded-guitars-list"><p>GUITARS</p>
+          <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow down icon" loading="lazy">
+        </li>
+        <div class="flex-container-in-line expanded-menu" id="expanded-guitars-menu">
+          <div class="flex-container-column">
+            <h4>FEATURED</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to New Arrivals" rel="noopener noreferrer"><p><span>New Arrivals</span></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/electrics-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/" aria-label="Go to Pro Plus Series" rel="noopener noreferrer"><p><span>NEW!</span> Pro Plus Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to X Series Models" rel="noopener noreferrer"><p><span>NEW!</span> X Series Models</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/concept-series/" aria-label="Go to Ltd Edition Concept Series" rel="noopener noreferrer"><p><span>NEW!</span> Ltd Edition Concept Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/diablo-iv-kelly-EMEA.html" aria-label="Go to Custom Shop Diablo IV Kelly" rel="noopener noreferrer"><p><span>Limited Edition!</span> Custom Shop Diablo IV Kelly</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/mj-series/mj-series-rhoads-rr24mg/2904001898.html" aria-label="Go to MJ Series Rhoads RR24MG" rel="noopener noreferrer"><p>MJ Series Rhoads RR24MG</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/left-handed-guitars/" aria-label="Go to Left Handed Guitars" rel="noopener noreferrer"><p>Left Handed Guitars</p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY SERIES</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/american-series/" aria-label="Go to American Series" rel="noopener noreferrer"><p>American Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/mj-series/" aria-label="Go to MJ Series" rel="noopener noreferrer"><p>MJ Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/concept-series/" aria-label="Go to Concept Series" rel="noopener noreferrer"><p>Concept Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/" aria-label="Go to Pro Plus Series" rel="noopener noreferrer"><p>Pro Plus Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-series/" aria-label="Go to Pro Series" rel="noopener noreferrer"><p>Pro Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to X Series" rel="noopener noreferrer"><p>X Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/js-series/" aria-label="Go to JS Series" rel="noopener noreferrer"><p>JS Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/artist-signature/" aria-label="Go to Artist Signature" rel="noopener noreferrer"><p>Artist Signature</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/guitars/" aria-label="Go to Shop All Guitars" rel="noopener noreferrer"><p class="underline">Shop All Guitars</p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY SHAPE</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/dinky/" aria-label="Go to Dinky" rel="noopener noreferrer"><p>Dinky<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/virtuoso/" aria-label="Go to Virtuoso" rel="noopener noreferrer"><p>Virtuoso<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/soloist/" aria-label="Go to Soloist" rel="noopener noreferrer"><p>Soloist<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/rhoads/" aria-label="Go to Rhoads" rel="noopener noreferrer"><p>Rhoads</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/king-v/" aria-label="Go to King V" rel="noopener noreferrer"><p>King V<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/juggernaut/" aria-label="Go to Juggernaut" rel="noopener noreferrer"><p>Juggernaut</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/kelly/" aria-label="Go to Kelly" rel="noopener noreferrer"><p>Kelly<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/monarkh/" aria-label="Go to Monarkh" rel="noopener noreferrer"><p>Monarkh</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/san-dimas/" aria-label="Go to San Dimas" rel="noopener noreferrer"><p>San Dimas®</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/star/" aria-label="Go to Star" rel="noopener noreferrer"><p>Star</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/warrior/" aria-label="Go to Warrior" rel="noopener noreferrer"><p>Warrior<sup>TM</sup></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/shadowcaster/" aria-label="Go to Shadowcaster" rel="noopener noreferrer"><p>Shadowcaster</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/mf-1/" aria-label="Go to MF-1" rel="noopener noreferrer"><p>MF-1</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/demmelition/" aria-label="Go to Demmelition" rel="noopener noreferrer"><p>Demmelition</p></a></li>
+            </ul>
+          </div>
+        </div>
+        <li id="expanded-basses-list">
+          <p>BASSES</p>
+          <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow down icon" loading="lazy">
+        </li>
+        <div class="flex-container-in-line expanded-menu" id="expanded-basses-menu">
+          <div class="flex-container-column">
+            <h4>FEATURED</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/pro-spectra.html" aria-label="Go to Pro Series Spectra" rel="noopener noreferrer"><p><span>NEW!</span> Pro Series Spectra</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/artist-signature/pro-series-signature-adam-blackstone%2C-gladys-jackson-concert%E2%84%A2-bass%2C-maple-fingerboard%2C-black-stone/2917699893.html" aria-label="Go to Adam Blackstone Gladys Signature Bass" rel="noopener noreferrer"><p><span>NEW!</span> Adam Blackstone "Gladys" Signature Bass</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/basses-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to Custom Shop Diablo IV Kelly" rel="noopener noreferrer"><p><span>NEW ARRIVALS</span></p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY SERIES</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/pro-series/" aria-label="Go to Pro Series" rel="noopener noreferrer"><p>Pro Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/x-series/" aria-label="Go to X Series" rel="noopener noreferrer"><p>X Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/js-series/" aria-label="Go to JS Series" rel="noopener noreferrer"><p>JS Series</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/artist-signature/" aria-label="Go to Artist Signature" rel="noopener noreferrer"><p>Artist Signature</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/basses/" aria-label="Go to Shop All Basses" rel="noopener noreferrer"><p class="underline">Shop All Basses</p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY SHAPE</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/concert-bass/" aria-label="Go to Concert Bass" rel="noopener noreferrer"><p>Concert Bass</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/kelly-bird/" aria-label="Go to Kelly Bird" rel="noopener noreferrer"><p>Kelly Bird</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/body-shape/spectra-bass/" aria-label="Go to Spectra Bass" rel="noopener noreferrer"><p>Spectra Bass<sup>TM</sup></p></a></li>
+            </ul>
+          </div>
+        </div>
+        <li id="expanded-accessories-list">
+          <p>ACCESSORIES</p>
+          <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow down icon" loading="lazy">
+        </li>
+        <div class="flex-container-in-line expanded-menu" id="expanded-accessories-menu">
+          <div class="flex-container-column">
+            <h4>FEATURED</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/best-sellers/accessories-best-sellers/" aria-label="Go to Best Sellers" rel="noopener noreferrer"><p><span>Best Sellers!</span></p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY CATEGORY</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/cables/" aria-label="Go to Cables" rel="noopener noreferrer"><p>Cables</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/picks/" aria-label="Go to Picks" rel="noopener noreferrer"><p>Picks</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/straps/" aria-label="Go to Straps" rel="noopener noreferrer"><p>Straps</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/strings/" aria-label="Go to Strings" rel="noopener noreferrer"><p>Strings</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/care-%26-cleaning/" aria-label="Go to Care and Cleaning" rel="noopener noreferrer"><p>Care & Cleaning</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/" aria-label="Go to Shop All" rel="noopener noreferrer"><p class="underline">Shop All</p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP CASES & GIG BAGS</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/cases/" aria-label="Go to Cases" rel="noopener noreferrer"><p>Cases</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/accessories/gig-bags/" aria-label="Go to Gig Bags" rel="noopener noreferrer"><p>Gig Bags</p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>HIGHLIGHTS</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/case-finder.html" aria-label="Go to Cases" rel="noopener noreferrer"><p>Jackson Case Finder</p></a></li>
+            </ul>
+          </div>
+        </div>
+        <li id="expanded-lifestyle-list">
+          <p>LIFESTYLE</p>
+          <img class="icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720471669/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/arrow_down_icon_jqdnon.png" alt="Arrow down icon" loading="lazy">
+        </li>
+        <div class="flex-container-in-line expanded-menu" id="expanded-lifestyle-menu">
+          <div class="flex-container-column">
+            <h4>FEATURED</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/new-apparel/" aria-label="Go to New Apparel" rel="noopener noreferrer"><p><span>NEW APPAREL</span></p></a></li>
+            </ul>
+          </div>
+          <div class="flex-container-column">
+            <h4>SHOP BY CATEGORY</h4>
+            <ul class="flex-container-column">
+              <li><a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/clothing/" aria-label="Go to Clothing" rel="noopener noreferrer"><p>Clothing</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/collectibles/" aria-label="Go to Collectibles" rel="noopener noreferrer"><p>Collectibles</p></a></li>
+              <li><a href="https://www.jacksonguitars.com/en-ES/lifestyle/" aria-label="Go to Shop All" rel="noopener noreferrer"><p class="underline">Shop All</p></a></li>
+            </ul>
+          </div>
+        </div>
+        <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://www.jacksonguitars.com/en-ES/artists.html" aria-label="Go to Artists" rel="noopener noreferrer"><p>ARTIST</p></a></li>
+        <li><a class="header-nav-bar-links-with-no-extended-menu" href="https://blog.jacksonguitars.com/" aria-label="Go to News" rel="noopener noreferrer"><p>NEWS</p></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="flex-container-in-line">
+      <p><a href="https://www.jacksonguitars.com/en-ES/store-policies.html#shipping" aria-label="Go to Shipping Fees Table" rel="noopener noreferrer"><u>Free Shipping</u></a> on orders over 49 €!</p>
+    </div>
+    <section>
+      <div class="slideshow-container">
+        <input type="checkbox" id="play-pause" class="play-pause" />
+        <label for="play-pause" class="play-pause-button"></label>
+        <ul class="slideshow">
+          <li id="slideshow-image-1">
+            <div class="slideshow-image-and-text-container">
+              <img
+                src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720735196/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Slideshow_jackson_series_x_vrgwux.jpg"
+              />
+              <div class="flex-container-column slideshow-text-container">
+                <p class="slideshow-new-tag-text">NEW!</p>
+                <h2>JACKSON X SERIES</h2>
+                <p>Distinctive and affordable, the new X Series lineup is fully loaded with Jackson DNA.</p>
+                <button class="shopping-button"><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to Jackson X Series Guitars Shop" rel="noopener noreferrer"><p>SHOP NOW</p></a></button>
+              </div>
+            </div>
+          </li>
+          <li id="slideshow-image-2">
+            <div class="slideshow-image-and-text-container">
+              <img
+              src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720735196/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Slideshow_full_spectrum_sound_uruujd.jpg"
+              />
+              <div class="flex-container-column slideshow-text-container">
+                <p class="slideshow-new-tag-text">NEW!</p>
+                <h2>FULL SPECTRUM SOUND</h2>
+                <p>The Pro Series Spectra Bass is designed to deliver the best to the demanding and adventurous pro player. </p>
+                <button class="shopping-button"><a href="https://www.jacksonguitars.com/en-ES/body-shape/spectra-bass/" aria-label="Go to Jackson Spectra Basses Shop" rel="noopener noreferrer"><p>SHOP NOW</p></a></button>
+              </div>
+            </div>
+          </li>
+          <li id="slideshow-image-3">
+            <div class="slideshow-image-and-text-container">
+              <img
+              src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720735196/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Slideshow_new_pro_plus_series_f3xemv.jpg"
+              />
+              <div class="flex-container-column slideshow-text-container">
+                <h2>NEW PRO PLUS SERIES</h2>
+                <p>Upgraded. Elevated. Unrivalled. The Pro Plus Series provides the ultimate high-performance experience for today's modern players.</p>
+                <button class="shopping-button"><a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/" aria-label="Go to Jackson Pro Plus Series Guitars Shop" rel="noopener noreferrer"><p>SHOP NOW</p></a></button>
+              </div>
+            </div>
+          </li>
+          <li id="slideshow-image-4">
+            <div class="slideshow-image-and-text-container">
+              <img
+              src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720735196/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Slideshow_made_in_corona_jyg0hv.jpg"
+              />
+              <div class="flex-container-column slideshow-text-container" id="last-slideshow-text-container">
+                <h2>NEW PRO PLUS SERIES</h2>
+                <p>Upgraded. Elevated. Unrivalled. The Pro Plus Series provides the ultimate high-performance experience for today's modern players.</p>
+                <div id="last-slideshow-button-container">
+                  <button class="shopping-button"><a href="https://www.jacksonguitars.com/en-ES/guitars/american-series/" aria-label="Go to Jackson American Series Guitars Shop" rel="noopener noreferrer"><p>SHOP NOW</p></a></button>
+                  <a href="https://www.jacksonguitars.com/en-ES/american-series.html" aria-label="Go to Jackson American Series Soloist Guitars Section" rel="noopener noreferrer"><p>LEARN MORE</p></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="slideshow-image-and-text-container">
+              <img
+                src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720735196/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Slideshow_jackson_series_x_vrgwux.jpg"
+              />
+              <div class="flex-container-column slideshow-text-container">
+                <p class="slideshow-new-tag-text">NEW!</p>
+                <h2>JACKSON X SERIES</h2>
+                <p>Distinctive and affordable, the new X Series lineup is fully loaded with Jackson DNA.</p>
+                <button class="shopping-button"><a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to Jackson X Series Guitars Shop" rel="noopener noreferrer"><p>SHOP NOW</p></a></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <nav class="slideshow-menu-mini-buttons">
+        <ul class="flex-container-in-line slideshow-mini-buttons-list">
+          <li><a class="slideshow-mini-button-link" href="#slideshow-image-1"></a></li>
+          <li><a class="slideshow-mini-button-link" href="#slideshow-image-2"></a></li>
+          <li><a class="slideshow-mini-button-link" href="#slideshow-image-3"></a></li>
+          <li><a class="slideshow-mini-button-link" href="#slideshow-image-4"></a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <div class="flex-container-in-line new-arrivals-articles">
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/" aria-label="Go to New Guitar Models Arrivals" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721677595/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/SECTION_2_Jackson_Pro_Plus_new-arrivals-shop-card-v2_2x_rk8s0a.jpg" alt="Two new models of Pro Plus guitars" loading="lazy">
+            <div class="flex-container-column">
+              <h2>NEW ARRIVALS</h2>
+              <p>SHOP NOW <img class="green-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721689047/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/green_arrow_ob3qul.png" alt="Green right arrow" loading="lazy"></p>
+            </div>
+          </a>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/" aria-label="Go to X Series Guitars" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721677595/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/SECTION_2_xseries-sub_wtw6tt.jpg" alt="Guitar model X Series Kelly" loading="lazy">
+            <div class="flex-container-column">
+              <h2>X SERIES</h2>
+              <p>SHOP NOW <img class="green-arrow" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721689047/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/green_arrow_ob3qul.png" alt="Green right arrow" loading="lazy"></p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="flex-container-column">
+      <div class="flex-container-in-line third-and-fifth-sections-header">
+        <h3>FEATURED MODELS</h3>
+        <div></div>
+      </div>
+      <div class="flex-container-in-line articles-container">
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/pro-plus-series-soloist%E2%84%A2-sl2-shattered-mirror/2910002503.html" aria-label="Go to Pro Plus XT Kelly™ KE HT6 Baritone Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>NEW</p>
+              </div>
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747561/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_1_Guitar_white_tcyqv1.png" alt="Guitar Plus Series Soloist™ SL2 Shattered Mirror" title="Plus Series Soloist™ SL2 Shattered Mirror" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/pro-plus-series-soloist%E2%84%A2-sl2-shattered-mirror/2910002503.html" aria-label="Go to Pro Plus XT Kelly™ KE HT6 Baritone Shopping Page" rel="noopener noreferrer"><h4>Pro Plus Series Soloist™ SL2 Shattered Mirror</h4></a>
+            <p>1,699.00 €</p>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/pro-plus-xt-kelly%E2%84%A2-ke-ht6-baritone/2919263568.html" aria-label="Go to Pro Plus XT Kelly™ KE HT6 Baritone Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>NEW</p>
+              </div>
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747561/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_2_Guitar_black_b3273v.png" alt="Guitar Pro Plus XT Kelly™ KE HT6 Baritone" title="Pro Plus XT Kelly™ KE HT6 Baritone" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/guitars/pro-plus-series/pro-plus-xt-kelly%E2%84%A2-ke-ht6-baritone/2919263568.html" aria-label="Go to Pro Plus XT Kelly™ KE HT6 Baritone Shopping Page" rel="noopener noreferrer"><h4>Pro Plus XT Kelly™ KE HT6 Baritone</h4></a>
+            <p>1,499.00 €</p>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/x-series-soloist%E2%84%A2-slx-dx-crackle/2916343576.html" aria-label="Go to X Series Soloist™ SLX DX Crackle - Bloodshot Crackle Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>NEW</p>
+              </div>
+              <img id="blodshot-crackle-guitar-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747561/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_3_Guitar_red_and_white_xgrmy1.png" alt="Guitar X Series Soloist™ SLX DX Crackle - Bloodshot Crackle" title="X Series Soloist™ SLX DX Crackle - Bloodshot Crackle" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/guitars/x-series/x-series-soloist%E2%84%A2-slx-dx-crackle/2916343576.html" aria-label="Go to X Series Soloist™ SLX DX Crackle - Bloodshot Crackle Shopping Page" rel="noopener noreferrer"><h4>X Series Soloist™ SLX DX Crackle</h4></a>
+            <p>999.00 €</p>
+            <div class="changing-colors-buttons-container">
+              <p class="changing-color-items-text">2 COLORS</p>
+              <a id="silver-mercury-crackle-link" href="https://www.jacksonguitars.com/en-ES/guitars/x-series/x-series-soloist%E2%84%A2-slx-dx-crackle/2916343521.html" aria-label="Go to X Series Soloist™ SLX DX Crackle - Silver Mercury Crackle Shopping Page" rel="noopener noreferrer"><button id="silver-mercury-crackle-button" class="changing-color-button"></button></a>
+              <img id="silver-mercury-crackle-guitar-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747561/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_3_Guitar_black_and_white_vycf6e.png" alt="Guitar X Series Soloist™ SLX DX Crackle black" title="X Series Soloist™ SLX DX Crackle - Silver Mercury Crackle" loading="lazy">
+              <a id="bloodshot-crackle-link" href="https://www.jacksonguitars.com/en-ES/guitars/x-series/x-series-soloist%E2%84%A2-slx-dx-crackle/2916343576.html" aria-label="Go to X Series Soloist™ SLX DX Crackle - Bloodshot Crackle Shopping Page" rel="noopener noreferrer"><button id="bloodshot-crackle-button" class="changing-color-button"></button></a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/js-series-concert%E2%84%A2-bass-minion-js1x/2915557552.html" aria-label="Go to JS Series Concert™ Bass Minion JS1X Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>NEW</p>
+              </div>
+              <img id="metallic-red-bass-link" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747562/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_4_Bass_red_jk9yz9.png" alt="Bass JS Series Concert™ Bass Minion JS1X - Metallic Red" title="JS Series Concert™ Bass Minion JS1X - Metallic Red" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/js-series-concert%E2%84%A2-bass-minion-js1x/2915557552.html" aria-label="Go to JS Series Concert™ Bass Minion JS1X Shopping Page" rel="noopener noreferrer"><h4>JS Series Concert™ Bass Minion JS1X</h4></a>
+            <p>249.00 €</p>
+            <div class="changing-colors-buttons-container">
+              <p class="changing-color-items-text">3 COLORS</p>
+              <a id="pavo-purple-bass-link" href="https://www.jacksonguitars.com/en-ES/basses/js-series/js-series-concert%E2%84%A2-bass-minion-js1x/2915556552.html" aria-label="Go to JS Series Concert™ Bass Minion JS1X - Pavo Purple Shopping Page" rel="noopener noreferrer"><button id="pavo-purple-bass-button" class="changing-color-button"></button></a>
+              <img id="pavo-purple-bass-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747562/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_4_Bass_purple_wscxce.png" alt="Bass JS Series Concert™ Bass Minion JS1X - Pavo Purple" title="JS Series Concert™ Bass Minion JS1X - Pavo Purple" loading="lazy">
+              <a id="satin-black-bass-link" href="https://www.jacksonguitars.com/en-ES/body-shape/concert-bass/js-series-concert%E2%84%A2-bass-minion-js1x/2915556568.html" aria-label="Go to JS Series Concert™ Bass Minion JS1X - Satin Black Shopping Page" rel="noopener noreferrer"><button id="satin-black-bass-button" class="changing-color-button"></button></a>
+              <img id="satin-black-bass-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721747562/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_3_Article_4_Bass_gray_xtokft.png" alt="Bass JS Series Concert™ Bass Minion JS1X - Satin Black" title="JS Series Concert™ Bass Minion JS1X - Satin Black" loading="lazy">
+              <a id="metallic-red-bass-link" href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/js-series-concert%E2%84%A2-bass-minion-js1x/2915557552.html" aria-label="Go to JS Series Concert™ Bass Minion JS1X - Metallic Red Shopping Page" rel="noopener noreferrer"><button id="metallic-red-bass-button" class="changing-color-button"></button></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="flex-container-column">
+      <div class="flex-container-in-line fourth-section-header">
+        <h3>JACKSON FEED</h3>
+        <div></div>
+      </div>
+      <div class="flex-container-in-line video-articles-container">
+        <article>
+          <a href="https://youtu.be/_mf-0RtpTms" aria-label="Go to Bring Me the Horizon's Lee Malia Video" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721901483/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_VIDEOS_video_1_IMAGEN_l6txwl.jpg" alt="Bring Me the Horizon's Lee Malia" loading="lazy">
+            <div class="flex-container-column video-articles-text">
+              <img class="play-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721942924/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/ic_play_circle_filled_white_48px-512_pfkqm6.webp" alt="Play icon" loading="lazy">
+              <p class="green-text">BACKSTAGE PASS</p>
+              <h2>Bring Me the Horizon's Lee Malia</h2>
+              <button class="shopping-button invisible-video-button"><a href="https://www.youtube.com/watch?v=_mf-0RtpTms&feature=youtu.be" aria-label="Go to Bring Me the Horizon's Lee Malia Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+              <button class="shopping-button video-button"><a href="https://www.youtube.com/watch?v=_mf-0RtpTms&feature=youtu.be" aria-label="Go to Bring Me the Horizon's Lee Malia Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+            </div>
+          </a>
+        </article>
+        <article>
+          <a href="https://youtu.be/P7eLH6bwlqY" aria-label="Go to Limited Edition X Series Video" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721901483/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_VIDEOS_video_2_IMAGEN_huu77w.jpg" alt="Limited Edition X Series" loading="lazy">
+            <div class="flex-container-column video-articles-text">
+              <img class="play-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721942924/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/ic_play_circle_filled_white_48px-512_pfkqm6.webp" alt="Play icon" loading="lazy">
+              <p class="green-text">NEW FOR 2024</p>
+              <h2>Limited Edition X Series</h2>
+              <button class="shopping-button invisible-video-button"><a href="https://youtu.be/P7eLH6bwlqY" aria-label="Go to Limited Edition X Series Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+              <button class="shopping-button video-button"><a href="https://youtu.be/P7eLH6bwlqY" aria-label="Go to Limited Edition X Series Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+            </div>
+          </a>
+        </article>
+        <article>
+          <a href="https://youtu.be/n41cDG2ywe0" aria-label="Go to Periphery's Misha Mansoor Video" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721901483/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_VIDEOS_video_3_IMAGEN_mu5qx4.png" alt="Periphery's Misha Mansoor" loading="lazy">
+            <div class="flex-container-column video-articles-text">
+              <img class="play-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721942924/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/ic_play_circle_filled_white_48px-512_pfkqm6.webp" alt="Play icon" loading="lazy">
+              <p class="green-text">BACKSTAGE PASS</p>
+              <h2>Periphery's Misha Mansoor</h2>
+              <button class="shopping-button invisible-video-button"><a href="https://youtu.be/n41cDG2ywe0" aria-label="Go to Periphery's Misha Mansoor Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+              <button class="shopping-button video-button"><a href="https://youtu.be/n41cDG2ywe0" aria-label="Go to Periphery's Misha Mansoor Video" rel="noopener noreferrer"><p>WATCH NOW</p></a></button>
+            </div>
+          </a>
+        </article>
+      </div>
+      <button id="video-button-bottom-section-four"><a href="https://www.youtube.com/user/JacksonGuitarsUSA" aria-label="Go to Jackson Guitars YouTube Channel" rel="noopener noreferrer"><p>VIEW ALL</p></a></button>
+    </section>
+    <section class="flex-container-column">
+      <div class="flex-container-in-line third-and-fifth-sections-header">
+        <h3>ACCESSORIES & MERCH</h3>
+        <div></div>
+      </div>
+      <div class="flex-container-in-line articles-container">
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/new-apparel-accessories/jackson-r.i.p.-logo-t-shirt%2C-black/2990324406.html" aria-label="Go to Jackson R.I.P. Logo Black T-shirt Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>BEST SELLER</p>
+              </div>
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721908345/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_5_Article_1_Tshirt_xdpggx.png" alt="Jackson R.I.P. Logo Black T-shirt" title="Jackson R.I.P. Logo T-shirt - Black" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/new-apparel-accessories/jackson-r.i.p.-logo-t-shirt%2C-black/2990324406.html" aria-label="Go to Jackson R.I.P. Logo Black T-shirt Shopping Page" rel="noopener noreferrer"><h4>Jackson R.I.P. Logo T-shirt, Black</h4></a>
+            <p>29.99 €</p>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/accessories/straps/jackson%C2%AE-cracked-mirror-straps/2995378003.html" aria-label="Go to Jackson® Cracked Mirror Straps White Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721908344/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_5_Article_2_white_strap_rwovte.png" alt="Jackson® Cracked Mirror Straps - White" title=" Jackson® Cracked Mirror Straps - White" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/accessories/straps/jackson%C2%AE-cracked-mirror-straps/2995378003.html" aria-label="Go to Jackson® Cracked Mirror Straps White Shopping Page" rel="noopener noreferrer"><h4>Jackson® Cracked Mirror Straps</h4></a>
+            <p>38.99 €</p>
+            <div class="changing-colors-buttons-container">
+              <p class="changing-color-items-text">3 COLORS</p>
+              <a id="white-straps-link" href="https://www.jacksonguitars.com/en-ES/accessories/straps/jackson%C2%AE-cracked-mirror-straps/2995378003.html" aria-label="Go to Jackson® Cracked Mirror Straps White Shopping Page" rel="noopener noreferrer"><button id="white-straps-button" class="changing-color-button"></button></a>
+              <a id="pink-straps-link" href="https://www.jacksonguitars.com/en-ES/accessories/straps/jackson%C2%AE-cracked-mirror-straps/2995378004.html" aria-label="Go to Jackson® Cracked Mirror Straps Pink Shopping Page" rel="noopener noreferrer"><button id="pink-straps-button" class="changing-color-button"></button></a>
+              <img id="pink-straps-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721912713/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/2995378004_jac_acc_frt_1_nr_udei13.png" alt="Jackson® Cracked Mirror Straps - Pink" title="Jackson® Cracked Mirror Straps - Pink" loading="lazy">
+              <a id="green-straps-link" href="https://www.jacksonguitars.com/en-ES/accessories/straps/jackson%C2%AE-cracked-mirror-straps/2995378005.html" aria-label="Go to Jackson® Cracked Mirror Straps Green Shopping Page" rel="noopener noreferrer"><button id="green-straps-button" class="changing-color-button"></button></a>
+              <img id="green-straps-image" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721912665/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/2995378005_jac_acc_frt_1_nr_dsu4kr.png" alt="Jackson® Cracked Mirror Straps - Green" title="Jackson® Cracked Mirror Straps - Green" loading="lazy">
+            </div>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/jackson%C2%AE-trucker-hat/2998785000.html" aria-label="Go to Jackson® Trucker Hat Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>BEST SELLER</p>
+              </div>
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721908343/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Section_5_Article_3_hat_fqlqg4.png" alt="Jackson® Trucker Hat" title="Jackson® Trucker Hat" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/jackson%C2%AE-trucker-hat/2998785000.html" aria-label="Go to Jackson® Trucker Hat Shopping Page" rel="noopener noreferrer"><h4>Jackson® Trucker Hat</h4></a>
+            <p>24.99 €</p>
+          </div>
+        </article>
+        <article>
+          <a href="https://www.jacksonguitars.com/en-ES/accessories/gig-bags/minion-rhoads-gig-bag/2991515106.html" aria-label="Go to Minion Rhoads Gig Bag Shopping Page" rel="noopener noreferrer">
+            <div class="flex-container-column product-article third-and-fifth-sections-articles">
+              <div class="flex-container-in-line section-green-tag">
+                <p>BEST SELLER</p>
+              </div>
+              <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1721912713/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/2991515106_jac_merch_frt_01_nr_fljvz6.png" alt="Minion Rhoads Gig Bag" title="Minion Rhoads Gig Bag" loading="lazy">
+            </div>
+          </a>
+          <div class="flex-container-column text-under-article-image">
+            <a href="https://www.jacksonguitars.com/en-ES/new-arrivals-2024/js-series-concert%E2%84%A2-bass-minion-js1x/2915557552.html" aria-label="Go to Minion Rhoads Gig Bag Shopping Page" rel="noopener noreferrer"><h4>Minion Rhoads Gig Bag</h4></a>
+            <p>57.99 €</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="flex-container-column">
+      <div id="responsive-logo-search-input-bar" class="flex-container-column logo-search-input-bar">
+        <!-- FALTA URL QUE SE GENERE EN NETLIFYs -->
+        <a href="#sign-in-bar" aria-label="Go to Jackson Home Page" rel="noopener noreferrer"><img id="responsive-footer-logo" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720623108/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/jackson_guitars_logo_white_eskahx.png" alt="Jackson logo" loading="lazy"></a>
+      </div>
+      <div class="flex-container-in-line footer-policies-container">
+        <div class="flex-container-column logo-search-input-bar">
+          <!-- FALTA URL QUE SE GENERE EN NETLIFYs -->
+          <a href="#sign-in-bar" aria-label="Go to Jackson Home Page" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720623108/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/jackson_guitars_logo_white_eskahx.png" alt="Jackson logo" loading="lazy"></a>
+        </div>
+        <div class="flex-container-column footer-info-links-container">
+          <ul class="flex-container-column">
+            <p>PRODUCTS</p>
+            <li><a href="https://www.jacksonguitars.com/en-ES/guitars/" aria-label="Go to Jackson Guitars Shopping Page" rel="noopener noreferrer"><p>Guitars</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/basses/" aria-label="Go to Jackson Basses Shopping Page" rel="noopener noreferrer"><p>Basses</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/accessories/" aria-label="Go to Jackson Accessories Shopping Page" rel="noopener noreferrer"><p>Accessories</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/clothing-%26-collectibles/" aria-label="Go to Jackson Clothes and Collectibles Shopping Page" rel="noopener noreferrer"><p>Lifestyle</p></a></li>
+          </ul>
+        </div>
+        <div class="flex-container-column footer-info-links-container">
+          <ul class="flex-container-column">
+            <p>COMPANY</p>
+            <li><a href="https://www.jacksonguitars.com/en-ES/history.html" aria-label="Go to Jackson History Page" rel="noopener noreferrer"><p>About</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/store-policies.html" aria-label="Go to Jackson Contact and Store Policies Page" rel="noopener noreferrer"><p>Contact Us</p></a></li>
+            <li><a href="https://www.fender.com/pages/careers" target="_blank" aria-label="Go to Fender Careers Page" rel="noopener noreferrer"><p>Careers</p></a></li>
+            <li><a href="https://blog.jacksonguitars.com/" target="_blank" aria-label="Go to Jackson Blog and News Page" rel="noopener noreferrer"><p>News</p></a></li>
+          </ul>
+        </div>
+        <div class="flex-container-column footer-info-links-container">
+          <ul class="flex-container-column">
+            <p>CUSTOMER SERVICE</p>
+            <li><a href="https://support.jacksonguitars.com/en-US/" target="_blank" aria-label="Go to Jackson Customer Support Page" rel="noopener noreferrer"><p>Support</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/dealers" aria-label="Go to Jackson Authorize Dealers Page" rel="noopener noreferrer"><p>Find a Dealer</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/store-policies.html" aria-label="Go to Jackson Contact and Store Policies Page" rel="noopener noreferrer"><p>Store Policies</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/register.html" aria-label="Go to Jackson Product Registration Page" rel="noopener noreferrer"><p>Register Your Jackson</p></a></li>
+          </ul>
+        </div>
+        <div class="flex-container-column footer-info-links-container">
+          <ul class="flex-container-column">
+            <p>ACCOUNT</p>
+            <li><a href="https://www.jacksonguitars.com/on/demandware.store/Sites-Jackson-EMEA-Site/en_ES/Login-Show?rurl=1" aria-label="Go to Jackson Account and Order Status Page" rel="noopener noreferrer"><p>My Account</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/on/demandware.store/Sites-Jackson-EMEA-Site/en_ES/Login-Show?rurl=1" aria-label="Go to Jackson Account and Order Status Page" rel="noopener noreferrer"><p>Order Status</p></a></li>
+            <li><a href="https://www.jacksonguitars.com/en-ES/store-policies.html" aria-label="Go to Jackson Contact and Store Policies Page" rel="noopener noreferrer"><p>Returns & Exchanges</p></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-container-in-line footer-button-and-icons-container">
+        <button class="flag-button shopping-button">
+          <!-- ME HE SALTADO EL PASO DEL POP UP CON TODOS LOS POSIBLES ENLACES DE IDIOMAS Y REGIONES QUE TE REDIRIGEN A LA VERSIÓN ELEGIDA Y HE INSERTADO DIRECTAMENTE LA URL A LA VERSIÓN 'SPANISH' DE LA WEB -->
+          <a href="https://www.jacksonguitars.com/es-ES/start" aria-label="Go To Spanish Web Version" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720472204/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/spain_flag_icon_r9mj5p.webp" alt="Spanish Flag" loading="lazy">
+            <p>SPAIN</p>
+          </a>
+        </button>
+        <nav>
+          <ul class="flex-container-in-line footer-icons-nav-bar">
+            <li><a href="https://www.facebook.com/jacksonguitarsusa" target="_blank" aria-label="Go to Jackson Facebook Page" rel="noopener noreferrer"><img class="icon footer-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720472555/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/facebook_icon_d5drci.webp" alt="Facebook Icon" loading="lazy"></a></li>
+            <li><a href="https://x.com/JacksonGuitars" target="_blank" aria-label="Go to Jackson Twitter Page" rel="noopener noreferrer"><img class="icon footer-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720472552/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/twitter_icon_euacuq.webp" alt="Twitter Icon" loading="lazy"></a></li>
+            <li><a href="https://www.instagram.com/Officialjacksonguitars/" target="_blank" aria-label="Go to Jackson Instagram Page" rel="noopener noreferrer"><img class="icon footer-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720472554/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/instagram_icon_opkrvr.png" alt="Instagram Icon" loading="lazy"></a></li>
+            <li><a href="https://www.youtube.com/user/JacksonGuitarsUSA" target="_blank" aria-label="Go to Jackson YuoTube Channel" rel="noopener noreferrer"><img class="icon footer-icon" src="https://res.cloudinary.com/dd0zwrz0b/image/upload/v1720472554/Project%201%20%7C%20Landing%20Page:%20Jackson%20Guitars%20replica/Icons/youtube_icon_n3gjs4.png" alt="YouTube Icon" loading="lazy"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="flex-container-in-line">
+      <div>
+        <p>Jackson/Charvel Manufacturing, Inc ©2024. All rights reserved.</p>
+      </div>
+      <nav class="flex-container-column">
+        <ul class="flex-container-in-line footer-up-policies-info-container">
+          <li><a href="https://www.jacksonguitars.com/en-ES/privacy-policy.html" aria-label="Go to Jackson Privacy Policy Page" rel="noopener noreferrer"><p>Privacy Policy</p></a></li>
+          <li><a href="https://www.jacksonguitars.com/en-ES/terms-of-use.html" aria-label="Go to Jackson Terms of Use Page" rel="noopener noreferrer"><p>Terms of Use</p></a></li>
+          <li><a href="https://www.jacksonguitars.com/en-ES/accessibility-statement.html" aria-label="Go to Jackson Accessibility Statement Page" rel="noopener noreferrer"><p>Accessibility Statement</p></a></li>
+        </ul>
+        <ul class="flex-container-in-line footer-down-policies-info-container">
+          <li><a href="https://www.jacksonguitars.com/en-ES/supply-chain-transparency.html" aria-label="Go to Jackson Supply Chain Transparency Page" rel="noopener noreferrer"><p>Supply Chain Transparency</p></a></li>
+          <li><a href="https://www.jacksonguitars.com/en-ES/competition-law.html" aria-label="Go to Jackson Competition Law Page" rel="noopener noreferrer"><p>Competition Law</p></a></li>
+        </ul>
+      </nav>
+    </section>
+  </footer>
+</body>
+</html>
