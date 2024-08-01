@@ -2229,7 +2229,7 @@ footer section:last-of-type > div {
     margin-top: 64px;
   }
   section:first-of-type {
-    height: 100svh;
+    height: 80svh;
   }
   .slideshow-container img {
     height: 40svh;
