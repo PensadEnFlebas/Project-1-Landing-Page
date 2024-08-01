@@ -709,7 +709,6 @@ body {
   position: relative;
   font-family: var(--rtc-font-family-palanquin-dark-regular);
   background-color: var(--gp-body-background-color);
-  overflow: hidden;
 }
 /*todo SING-IN BAR */
 #sign-in-bar {
