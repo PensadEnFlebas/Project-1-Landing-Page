@@ -2254,7 +2254,7 @@ footer section:last-of-type > div {
   }
   .slideshow-menu-mini-buttons,
   .play-pause-button {
-    bottom: 1.5rem;
+    bottom: 0.1rem;
   }
   .new-arrivals-articles > article {
     width: 100%;
@@ -2346,6 +2346,15 @@ footer section:last-of-type > div {
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
+  }
+}
+/*todo 645 */
+@media screen and (max-width: 645px) {
+  .slideshow-menu-mini-buttons {
+    display: none;
+  }
+  .play-pause-button {
+    bottom: 0.2rem;
   }
 }
 /*todo 460 */
