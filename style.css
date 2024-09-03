@@ -714,6 +714,7 @@ body {
 #sign-in-bar {
   display: flex;
   justify-content: flex-end;
+  max-width: 100vw;
   height: var(--gp-spacing-sign-in-bar-height);
   background-color: var(--gp-sign-in-bar-background-color);
   font-family: var(--gp-sign-in-bar-font-family);
@@ -938,7 +939,7 @@ input[type='search'] {
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  color: var(--rtc-font-color-white);
+  color: white;
   cursor: auto;
   z-index: 9;
   width: 21.5rem;
@@ -1838,6 +1839,7 @@ div.video-articles-text > button.invisible-video-button {
 footer {
   background-color: var(--rtc-background-color-dark);
   padding-top: 70px;
+  height: fit-content;
 }
 #responsive-logo-search-input-bar {
   display: none;
@@ -2306,10 +2308,27 @@ footer section:last-of-type > div {
     top: 8.5rem;
   }
   footer {
+    height: 160svh;
+    justify-content: space-between;
+  }
+  footer section:first-of-type {
     height: 120svh;
+    justify-content: space-between;
+  }
+  .footer-policies-container {
+    flex-wrap: wrap;
+    margin: 0 16px;
+  }
+  .footer-info-links-container {
+    width: 40vw;
+  }
+  .footer-button-and-icons-container {
+    flex-direction: column;
+    margin: 20px;
+    gap: 2rem;
   }
   footer section:last-of-type {
-    height: 307px;
+    height: 40svh;
     flex-direction: column-reverse;
   }
   footer section:last-of-type > div {
@@ -2327,18 +2346,6 @@ footer section:last-of-type > div {
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
-  }
-  .footer-policies-container {
-    flex-wrap: wrap;
-    margin: 0 16px;
-  }
-  .footer-info-links-container {
-    width: 40vw;
-  }
-  .footer-button-and-icons-container {
-    flex-direction: column;
-    margin: 52px 0;
-    gap: 3rem;
   }
 }
 /*todo 460 */
@@ -2364,4 +2371,3 @@ footer section:last-of-type > div {
     bottom: -70px;
   }
 }
-/*todo 920 HEIGHT */
